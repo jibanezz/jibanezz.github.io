@@ -50,6 +50,44 @@
 <button onclick = "turn_on_bulb()">turn on bulb</button>
 <button onclick = "turn_off_bulb()">turn off bulb</button><br>
 
+
+<h1 class="cat">this is heading 1</h1>
+
+<h2 class="cat">this is heading 2</h2>
+
+<h3 class="cat">this is heading 3</h3>
+
+
+<script>
+    function change_color(){
+        const jose = document.getElementsByClassName("cat")
+        for(let i = 0; i < jose.length; i++){
+            jose[i].style.color = "blue";
+            jose[i].style.backgroundColor = "yellow";
+        }
+    
+    }
+
+
+</script>
+
+<button onclick = "change_color()">change color</button>
+
+
+
+<h1 id = "coldcat">i like cats </h1>
+
+<script>
+    function change_text(){
+        document.getElementById("coldcat").innerHTML = "Jose hahahahah";
+    }
+
+</script>
+
+<button onclick = "change_text()">change font size</button>
+
+
+
 </body>
  
 
